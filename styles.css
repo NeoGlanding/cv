@@ -53,6 +53,10 @@ b {
     background-color: #e8b923;
 }
 
+#navform {
+    display: none;
+}
+
 .overlay {
     text-align: center;
 }
@@ -275,7 +279,7 @@ footer p {
     }
 
     .overlay {
-        margin: 3rem 0 1rem 0;
+        margin: 4.7rem 0 1rem 0;
         text-align: center;
     }
 
@@ -357,6 +361,10 @@ footer p {
 }
 
 @media (max-width: 320px) {
+    .overlay{
+        margin: 3rem 0 0 0;
+    }
+
     .header-text p {
         padding: 0.2rem;
         display: inline-block;
@@ -399,7 +407,9 @@ footer p {
     }
 
     .overlay button {
-        display: none;
+        padding: 0.5rem;
+        margin: auto;
+        display: block;
     }
 }
 
@@ -430,5 +440,23 @@ footer p {
 @media (max-width: 280px) {
     #about {
         padding: 1rem;
+    }
+}
+
+@media (max-height: 660px), (max-height: 478px) {
+    .overlay {
+        margin: 0;
+    }
+
+    .overlay button {
+        display: none;
+    }
+
+    nav .nav-links a {
+        margin: 0 1rem 0 0;
+    }
+
+    #navform {
+        display: inline-block;
     }
 }
