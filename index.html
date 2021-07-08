@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ihsan Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h3 class="nav-logo">Ihsan</h3>
+            <div class="nav-links">
+                <a href="#about" id="navab" onclick="renderAbout();">About</a>
+                <a href="#experience" id="navex" onclick="renderExperience();">Experience</a>
+                <a href="#achievements" id="navchief" onclick="renderAchievement();">Achievements</a>
+            </div>
+            <select name="links" id="links" onchange="stuff(this)">
+                <option value="About">About</option>
+                <option value="Experience"">Experience</option>
+                <option value="Achievement">Achievements</option>
+                <option value="Contact">Contact</option>
+            </select>
+        </nav>
+        <div class="overlay">
+            <img class="header-pic" src="https://i.postimg.cc/ZRrPxVh8/1618995334450.jpg" alt="">
+            <div class="header-text">
+                <h1 class="header-welcome">IHSAN</h1>
+                <p class="header-profession"> <b>Web</b> Developer | <b>Network</b> Engineer</p>
+                <div class="header-social">
+                    <a href="https://wa.me/08568881510"><img src="https://i.ibb.co/GcRJxpz/whatsapp-32.png" /></a>
+                    <a href="https://github.com/NeoGlanding"><img src="https://i.ibb.co/R7yfXHJ/github-10-32.png" /></a>
+                    <a href="https://www.linkedin.com/in/muhammad-ihsan-abd-aa1356192/"><img src="https://i.postimg.cc/qM3WxsZ1/linkedin-3-32.png" /></a>
+                    <a href="https://www.facebook.com/ihsanond/"><img src="https://i.ibb.co/HGkNnx9/facebook-3-32.png" alt=""></a>
+                    <a href="https://www.instagram.com/ihsanrtp"><img src="https://iili.io/oTpYNa.th.png" alt=""></a>
+                    <a href="mailto:ihsanrtp@gmail.com"><img src="https://iili.io/oTydzJ.th.png" alt=""></a>
+                </div>
+                <a href="#form"><button onclick="renderContact();">Contact Me</button></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article id="about">
+            <div class="about-graph">
+                <h3>About</h3>
+                <p>I'm currently interest to Javascript Stacks, especially <b> MERN</b> Stack, also i'm Certified
+                    Network
+                    Engineer,
+                    proven by <b> MTCNA</b> Certificate, and i have passed Essentials Network Security Associate by
+                    <b>Fortinet</b> .</p>
+                <p>
+                    Also i'm sport enthusiast, especially Boxing and Football, i'm big fan of Muhammad Ali, also
+                    Juventino because I'm big fan of Juventus.
+                </p>
+            </div>
+            <div class="about-data">
+                <h3>Biodata</h3>
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td>Muhammad Ihsan Abd</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>ihsanrtp@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Social Media</td>
+                        <td>
+                            <ul>
+                                <a href="https://www.facebook.com/ihsanond/">
+                                    <li>Facebook</li>
+                                </a>
+                                <a href="https://www.instagram.com/ihsanrtp">
+                                    <li>Instagram</li>
+                                </a>
+                                <a href="https://www.linkedin.com/in/muhammad-ihsan-abd-aa1356192/">
+                                    <li>LinkedIn</li>
+                                </a>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>0856-8881-510</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article id="experience">
+            <div id="experience-work">
+                <h3>Work Experience</h3>
+            </div>
+            <div id="experience-education">
+                <h3>Educational Experience</h3>
+            </div>
+        </article>
+
+        <article id="form">
+            <div class="form-submit">
+                <h3>Contact</h3>
+                <form action="">
+                    <input type="text" id="nameInput" placeholder="Name" autocomplete="off">
+                    <input type="email" id="emailInput" placeholder="Email" autocomplete="off">
+                    <textarea name="" id="messageInput" cols="80" rows="10" placeholder="Message"
+                        autocomplete="off"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </article>
+
+        <article id='thankyou'>
+            <h2> Thank you for submitting </h2>
+            <h2><b id="thanks-name">${nameInput}</b></h2>
+        </article>
+
+        <article id="quote">
+            <h3><b>Inspiration</b></h3>
+        </article>
+
+        <article id="achievements">
+            <h3>Achievements</h3>
+            <ul>
+                <li><a href="https://mikrotik.com/training/certificates/b191206c78a616688e8f">Mikrotik Certified Network
+                        Associate</a></li>
+                <li><a href="https://drive.google.com/file/d/1oY9lyBCm5gn3JRtAF9O6QwBSsSpYaaC7/view?usp=sharing">Fortinet
+                        Network Security Associate #1</a></li>
+                <li><a href="https://drive.google.com/file/d/1oY9lyBCm5gn3JRtAF9O6QwBSsSpYaaC7/view?usp=sharing">Fortinet
+                        Network Security Associate #2</a></li>
+                <li><a href="https://skilvul.com/paths/web-development-pemula/student/ckq6e8ngqkd8g0722icta7ugy">Skilvul
+                        Skilpath: Web Developer Pemula</a></li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <p>Ihsanrtp</p>
+    </footer>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
